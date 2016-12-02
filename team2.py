@@ -1,14 +1,14 @@
 ####
 # Each team's file must define four tokens:
-#     team_name: a string
-#     strategy_name: a string
-#     strategy_description: a string
-#     move: A function that returns 'c' or 'b'
+#     Two Forks: a string
+#     strategy_name: To betray each turn
+#     strategy_description: betrayel
+#     move: A function that returns 'c' to a 'b'
 ####
 
-team_name = 'The name the team gives to itself' # Only 10 chars displayed.
-strategy_name = 'The name the team gives to this strategy'
-strategy_description = 'How does this strategy decide?'
+team_name = 'TwoForks' # Only 10 chars displayed.
+strategy_name = 'Betray each turn'
+strategy_description = 'By reading the colludes to the betrayel?'
     
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
@@ -71,4 +71,6 @@ if __name__ == '__main__':
               # move('bbb', 'ccc', 0, 0) returns 'b'.
               my_score=0, 
               their_score=0,
-              result='b')             
+              result='b')      
+              
+                     #Overall the stragety concluded of beraying each time in order to maintain given and recieved points. Therefore we never lost.       
